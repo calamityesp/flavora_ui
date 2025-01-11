@@ -4,15 +4,21 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  - master
+
+variables:
+  dockerRegistryServiceConnection: '{{ containerRegistryConnection.Id }}'
 
 pool:
- vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
 stages:
-    - stage: build
-      displayName: Build Image
-      jobs:
-      - job: Build
-        pool:
-          vmImage: 'ubuntu-latest'
+  - stage: Build
+    displayName: Build and Push
+    jobs:
+    - job: Build
+    displayName: Build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+
