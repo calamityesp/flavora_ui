@@ -28,3 +28,5 @@ steps:
     repository: 'flavora_ui'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+
+
