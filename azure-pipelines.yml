@@ -7,6 +7,7 @@ trigger:
 - master
 
 pool:
+  name: $(calamityhub)
   vmImage: ubuntu-latest
 
 steps:
