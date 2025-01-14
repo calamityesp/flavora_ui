@@ -29,12 +29,3 @@ steps:
     repository: 'flavora_ui'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-
-- task: AzureWebAppContainer@1
-  inputs:
-    azureSubscription: 'Azure subscription 1(899fce09-a777-4966-8a73-9b3aa35ee57d)'
-    appName: 'flavorauidev'
-    containers: 'madrizzdevregistry.azurecr.io/flavora_ui:latest'
-    appSettings : | 
-      WEBSITES_ENABLE_APP_SERVICE_STORAGE=false
-      WEBSITES_PORT=80
