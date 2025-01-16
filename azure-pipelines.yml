@@ -1,4 +1,5 @@
 # Node.js with Angular
+
 # Build a Node.js project that uses Angular.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -7,6 +8,7 @@ trigger:
 - master
 
 pool:
+  name: $(calamityhub)
   vmImage: ubuntu-latest
 
 steps:
@@ -27,3 +29,10 @@ steps:
     repository: 'flavora_ui'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+
+- task: AzureWebAppContainer@1
+  displayName: 'Azure Web App on Container Deploy'
+  inputs:
+    azureSubscription: 'Azure subscription 1(899fce09-a777-4966-8a73-9b3aa35ee57d)'
+    appName: 'flavorauidev'
+    containers: 'madrizzdevregistry.azurecr.io/flavora_ui:latest'
