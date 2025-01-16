@@ -31,6 +31,7 @@ steps:
     Dockerfile: '**/Dockerfile'
 
 - task: AzureWebAppContainer@1
+  displayName: 'Azure Web App on Container Deploy'
   inputs:
     azureSubscription: 'Azure subscription 1(899fce09-a777-4966-8a73-9b3aa35ee57d)'
     appName: 'flavorauidev'
