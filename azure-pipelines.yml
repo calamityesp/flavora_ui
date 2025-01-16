@@ -35,4 +35,4 @@ steps:
   inputs:
     azureSubscription: 'Azure subscription 1(899fce09-a777-4966-8a73-9b3aa35ee57d)'
     appName: 'flavorauidev'
-    containers: 'madrizzdevregistry.azurecr.io/flavora_ui:latest'
+    containers: 'madrizzdevregistry.azurecr.io/kdds_flavora:latest'
