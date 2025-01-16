@@ -29,6 +29,8 @@ steps:
     repository: 'kdds_flavora'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: |
+      latest
 
 - task: AzureWebAppContainer@1
   displayName: 'Azure Web App on Container Deploy'
