@@ -28,7 +28,7 @@ steps:
     containerRegistry: 'Madrizz Container Registry'
     repository: 'kdds_flavora'
     command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+    Dockerfile: 'Dockerfile'
     tags: |
       latest
 
