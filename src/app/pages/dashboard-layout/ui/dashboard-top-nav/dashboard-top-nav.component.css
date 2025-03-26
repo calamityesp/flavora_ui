@@ -1,0 +1,19 @@
+/* Top Bar */
+.top-bar {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.user-info {
+  color: #333;
+  font-size: 0.9rem;
+}
