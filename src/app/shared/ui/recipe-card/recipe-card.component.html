@@ -1,26 +1,43 @@
-<div class="card">
-  <mat-card class="recipe-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Pixel Orca</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
+<!-- <div class="card"> -->
+<!--   <mat-card class="recipe-card"> -->
+<!--     <mat-card-header> -->
+<!--       <div mat-card-avatar class="example-header-image"></div> -->
+<!--       <mat-card-title>Pixel Orca</mat-card-title> -->
+<!--       <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+<!--     </mat-card-header> -->
+<!--     <img -->
+<!--       mat-card-image -->
+<!--       src="https://images4.alphacoders.com/103/1034298.jpg" -->
+<!--       alt="Synthwave" -->
+<!--     /> -->
+<!--     <mat-card-content> -->
+<!--       <p>She got a big booty, so I call her big booty</p> -->
+<!--     </mat-card-content> -->
+<!--     <mat-card-actions> -->
+<!--       <button mat-button>View</button> -->
+<!--       <button mat-button>Edit</button> -->
+<!--     </mat-card-actions> -->
+<!--   </mat-card> -->
+<!-- </div> -->
+
+<article class="bg-white shadow-x2 rounded overflow-hidden flex flex-col">
+  <header class="flex justify-center p-4">
+    <img class="w-10 h-10 rounded-full" src="avatar-url.jpg" />
+    <div class="ml-3">
+      <h2 class="text-lg font-semibold">Pixel Orca</h2>
+    </div>
+  </header>
+  <figure>
     <img
-      mat-card-image
+      class="w-full object-cover"
       src="https://images4.alphacoders.com/103/1034298.jpg"
-      alt="Synthwave"
     />
-    <mat-card-content>
-      <p>She got a big booty, so I call her big booty</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>View</button>
-      <button mat-button>Edit</button>
-    </mat-card-actions>
-  </mat-card>
-  <!-- <h2>Card Title 1</h2> -->
-  <!-- <p> -->
-  <!--   Some description or data about this section. You can include charts, -->
-  <!--   tables, or text. -->
-  <!-- </p> -->
-</div>
+  </figure>
+  <section class="p-4 flex-grow">
+    <p class="text-grey-700">She got a big booty, so I call her big booty</p>
+  </section>
+  <footer class="p-4 flex space-x-2">
+    <button class="bg-blue-500 text-white py-1 px-3 rounded">View</button>
+    <button class="bg-grey-200 text-grey-700 py-1 px-3 rounded">Edit</button>
+  </footer>
+</article>

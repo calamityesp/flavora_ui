@@ -1,19 +1,29 @@
-<body>
-  <app-dashboard-nav></app-dashboard-nav>
-  <!-- Main Content Area -->
-  <div class="main-content">
-    <!-- Top Bar -->
+<body class="h-screen flex flex-col">
+  <!-- Top Nav -->
+  <header class="bg-gray-800 text-white">
     <app-dashboard-top-nav></app-dashboard-top-nav>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="flex flex-grow">
+    <!-- Side Nav -->
+    <aside class="w-64 bg-gray-200">
+      <app-dashboard-nav></app-dashboard-nav>
+    </aside>
+
     <!-- Main Content -->
-    <div class="content-area">
-      <ul class="cards">
+    <main class="flex-grow p-4">
+      <ul
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4"
+      >
         <li>
           <app-recipe-card></app-recipe-card>
         </li>
         <li>
           <app-add-new-recipe-card></app-add-new-recipe-card>
         </li>
+        <!-- More cards if needed -->
       </ul>
-    </div>
+    </main>
   </div>
 </body>
