@@ -1,29 +1,50 @@
-<body class="h-screen flex flex-col">
+<div class="flex bg-red-500 min-h-screen">
   <!-- Top Nav -->
-  <header class="bg-gray-800 text-white">
+  <header class="fixed top-0 w-full">
     <app-dashboard-top-nav></app-dashboard-top-nav>
   </header>
 
-  <!-- Main Layout -->
-  <div class="flex flex-grow">
-    <!-- Side Nav -->
-    <aside class="w-64 bg-gray-200">
+  <div class="flex mt-12 border border-black">
+    <aside class="bg-[#2c3e50]">
       <app-dashboard-nav></app-dashboard-nav>
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-grow p-4">
-      <ul
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4"
-      >
+    <div class="flex mt-3">
+      <ul class="grid grid-cols-5 gap-4 m-3 max-h-1.5 min-h-1.5">
         <li>
           <app-recipe-card></app-recipe-card>
         </li>
+        <li>
+          <app-recipe-card></app-recipe-card>
+        </li>
+        <li>
+          <app-recipe-card></app-recipe-card>
+        </li>
+        <li>
+          <app-recipe-card></app-recipe-card>
+        </li>
+        <li>
+          <app-recipe-card></app-recipe-card>
+        </li>
+        <li>
+          <app-recipe-card></app-recipe-card>
+        </li>
+        <li>
+          <app-recipe-card></app-recipe-card>
+        </li>
+        <li>
+          <app-recipe-card></app-recipe-card>
+        </li>
+        <li>
+          <app-recipe-card></app-recipe-card>
+        </li>
+
         <li>
           <app-add-new-recipe-card></app-add-new-recipe-card>
         </li>
         <!-- More cards if needed -->
       </ul>
-    </main>
+    </div>
   </div>
-</body>
+</div>
