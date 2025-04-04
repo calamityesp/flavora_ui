@@ -19,5 +19,24 @@ export const routes: Routes = [
     path: 'portal',
     loadComponent: () =>
       import('./pages/dashboard-layout/dashboard-layout.component'),
+    children: [
+      {
+        path: '',
+        redirectTo: 'Mybooks',
+        pathMatch: 'full',
+      },
+      {
+        path: 'Mybooks',
+        loadComponent: () => import('./mybooks/mybooks.component'),
+      },
+      {
+        path: 'Recent',
+        loadComponent: () => import('./recent/recent.component'),
+      },
+      {
+        path: 'Favorite',
+        loadComponent: () => import('./favorite/favorite.component'),
+      },
+    ],
   },
 ];

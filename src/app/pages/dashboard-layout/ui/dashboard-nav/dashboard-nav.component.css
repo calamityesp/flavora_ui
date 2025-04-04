@@ -16,6 +16,9 @@
   text-align: center;
 }
 
+.active {
+  background-color: red;
+}
 /**/
 /* .sidebar ul { */
 /*   list-style-type: none; */
