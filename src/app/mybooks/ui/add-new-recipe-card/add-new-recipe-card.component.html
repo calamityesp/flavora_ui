@@ -10,8 +10,9 @@
 <!--   </mat-card> -->
 <!-- </div> -->
 
-<article
-  class="flex flex-col bg-white shadow-2xl dark:shadow-[0_4px_8px_rgba(255,255,255,0.5)] rounded overflow-hidden border border-black h-full"
+<div
+  class="flex flex-col hover:scale-105 active:scale-95 bg-white shadow-2xl cursor-pointer dark:shadow-[0_4px_8px_rgba(255,255,255,0.5)] rounded overflow-hidden border border-black h-full"
+  (click)="openModal()"
 >
   <figure class="mt-5">
     <img class="w-full object-cover" src="add-folder-svgrepo-com.svg" />
@@ -19,4 +20,12 @@
   <section class="p-4">
     <p class="text-lg text-white-500 font-bold">Add new recipe</p>
   </section>
-</article>
+  @if (modalOpened) {
+    <app-modal-center (closeModal)="closeModal()">
+      <ng-container modal-header>Add More Pixel Orcas</ng-container>
+      <ng-container modal-body
+        >And bite her booty like a big apple</ng-container
+      >
+    </app-modal-center>
+  }
+</div>

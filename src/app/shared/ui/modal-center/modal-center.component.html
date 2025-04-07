@@ -1,0 +1,12 @@
+<ng-template cdkPortal>
+  <div class="modal">
+    <div class="modal__header">
+      <ng-content select="[modal-header]"></ng-content>
+      <button class="bg-blue-500 text-white py-1 px-3 rounded active:scale-95 hover:scale-120" (click)="closeModal.emit()">Close</button>
+    </div>
+    <div class="modal__body">
+      <ng-content select="[modal-body]"></ng-content>
+    </div>
+  </div>
+</ng-template>
+
